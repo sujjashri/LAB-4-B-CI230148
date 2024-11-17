@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Collection</title>
+    <script>
+        // JSON representation of the book collection
+        const bookCollection = {
+            "books": [
+                {
+                    "title": "The Great Gatsby",
+                    "author": "F. Scott Fitzgerald",
+                    "publicationYear": 1925,
+                    "genres": ["Fiction", "Classics"]
+                },
+                {
+                    "title": "To Kill a Mockingbird",
+                    "author": "Harper Lee",
+                    "publicationYear": 1960,
+                    "genres": ["Fiction", "Coming-of-Age"]
+                }
+            ]
+        };
+
+        // Displaying the required details in the console
+        window.onload = function() {
+            console.log("Title of the first book:", bookCollection.books[0].title);
+            console.log("Author of the second book:", bookCollection.books[1].author);
+            console.log("Genres of all books:", bookCollection.books.map(book => book.genres).flat());
+        };
+    </script>
+</head>
+<body>
+    <h1>Book Collection</h1>
+    
+</body>
+</html>
